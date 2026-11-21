@@ -1,171 +1,454 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0284c7" />
-  <title>دليل الفتق الشامل - توعية وعلاج</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Cairo', sans-serif;
-      scroll-behavior: smooth;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الفتق الشامل - توعية وعلاج</title>
+    <!-- تضمين مكتبة تايليند سي إس إس للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-  <!-- شريط التنقل العلوي -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center space-x-3 space-x-reverse">
-        <div class="w-10 h-10 bg-sky-600 rounded-xl flex items-center justify-center text-white font-black text-xl shadow-md">
-          ف
+    <!-- شريط التنقل العلوي -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 bg-sky-600 rounded-xl flex items-center justify-center text-white font-black text-xl shadow-md">ش</div>
+                <span class="text-xl font-extrabold text-slate-900">صحتك أولاً <span class="text-sky-600">| الفتق</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-slate-600">
+                <a href="#types" class="hover:text-sky-600 transition">أنواع الفتق</a>
+                <a href="#symptoms" class="hover:text-sky-600 transition">الأعراض</a>
+                <a href="#causes" class="hover:text-sky-600 transition">الأسباب</a>
+                <a href="#treatment" class="hover:text-sky-600 transition">العلاج والوقاية</a>
+                <a href="#game" class="hover:text-sky-600 transition">لعبة التوعية 🎮</a>
+                <a href="#quiz" class="hover:text-sky-600 transition">فحص الأعراض</a>
+            </nav>
+            <a href="#quiz" class="bg-sky-600 hover:bg-sky-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-md transition transform hover:-translate-y-0.5">
+                ابدأ الفحص الذاتي
+            </a>
         </div>
-        <span class="text-lg sm:text-xl font-extrabold text-slate-900">
-          صحتك أولاً <span class="text-sky-600">| الفتق</span>
-        </span>
-      </div>
+    </header>
 
-      <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-slate-700">
-        <a href="#about" class="hover:text-sky-600 transition">ما هو الفتق؟</a>
-        <a href="#types" class="hover:text-sky-600 transition">الأنواع والأعراض</a>
-        <a href="#prevention" class="hover:text-sky-600 transition">الوقاية والعلاج الطبيعي</a>
-        <a href="#faq" class="hover:text-sky-600 transition">اختبار وخرافات</a>
-      </nav>
-
-      <a href="#prevention" class="bg-sky-600 hover:bg-sky-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl shadow transition">
-        نصائح الوقاية
-      </a>
-    </div>
-  </header>
-
-  <!-- القسم الرئيسي -->
-  <section class="bg-gradient-to-b from-sky-50 to-slate-50 py-14 sm:py-20 border-b border-slate-100">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-      <span class="inline-block bg-sky-100 text-sky-800 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full mb-5">
-        منصة توعوية وتثقيفية مبسطة
-      </span>
-      <h1 class="text-3xl sm:text-5xl font-black text-slate-900 leading-tight mb-6">
-        دليل الفتق التفاعلي: <span class="text-sky-600">فهم الحالة، الوقاية، والتأهيل</span>
-      </h1>
-      <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
-        معلومات طبية وتأهيلية واضحة باللغة العربية لمساعدتك على التعرّف على أنواع الفتق، وفهم دور العلاج الطبيعي والوقاية اليومية، والتمييز بين الحقائق والخرافات الشائعة.
-      </p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="#types" class="bg-sky-600 hover:bg-sky-700 text-white font-bold px-6 py-3.5 rounded-2xl shadow-md transition">
-          تعرّف على الأنواع
-        </a>
-        <a href="#faq" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-bold px-6 py-3.5 rounded-2xl transition">
-          حقائق وخرافات
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ما هو الفتق؟ -->
-  <section id="about" class="py-14 max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">ما هو الفتق؟</h2>
-      <p class="text-slate-600 leading-relaxed text-base sm:text-lg mb-6">
-        يحدث الفتق عندما يبرز عضو أو نسيج داخلي (مثل جزء من الأمعاء أو النسيج الدهني) عبر نقطة ضعف في جدار العضلات أو الأنسجة المحيطة به. غالباً ما يظهر كانتفاخ ملحوظ يزداد وضوحاً عند الوقوف أو السعال أو بذل مجهود، وقد يقل أو يختفي عند الاستلقاء.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-        <div class="bg-sky-50/70 border border-sky-100 rounded-2xl p-4">
-          <div class="font-bold text-sky-900 mb-1">علامة مبكرة شائعة</div>
-          <p class="text-slate-600">بروز أو انتفاخ موضعي يظهر مع الكحة أو رفع الأشياء أو الوقوف الطويل.</p>
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section class="relative bg-gradient-to-br from-sky-900 via-sky-800 to-blue-900 text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto text-center space-y-6 relative z-10">
+            <span class="inline-block bg-sky-800/80 text-sky-200 border border-sky-700 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                الدليل الطبي التوعوي الشامل
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight">
+                كل ما تحتاج معرفته عن <span class="text-sky-400">مرض الفتق</span> وأعراضه وطرق علاجه
+            </h1>
+            <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                اكتشف الأسباب الخفية وراء حدوث الفتق، تعرف على أنواعه المختلفة، واختبر معلوماتك من خلال ألعابنا وتدقيقاتنا الطبية المعتمدة.
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#types" class="bg-white text-sky-900 hover:bg-sky-50 font-bold px-8 py-4 rounded-2xl shadow-lg transition transform hover:-translate-y-0.5">
+                    تصفح الأنواع 📖
+                </a>
+                <a href="#game" class="bg-sky-600 hover:bg-sky-500 text-white font-bold px-8 py-4 rounded-2xl shadow-lg transition transform hover:-translate-y-0.5">
+                    العب واختبر معلوماتك 🎮
+                </a>
+            </div>
         </div>
-        <div class="bg-amber-50/70 border border-amber-100 rounded-2xl p-4">
-          <div class="font-bold text-amber-900 mb-1">متى نطلب تقييماً عاجلاً؟</div>
-          <p class="text-slate-600">ألم حاد مفاجئ، تغير لون الانتفاخ، صلابة أو عدم إمكانية إرجاعه، أو غثيان وقيء.</p>
+    </section>
+
+    <!-- 1. أنواع الفتق الرئيسية -->
+    <section id="types" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">أنواع الفتق الرئيسية</h2>
+            <div class="w-16 h-1 bg-sky-600 mx-auto rounded-full"></div>
+            <p class="text-slate-600 text-lg">
+                يحدث الفتق عندما يندفع جزء من العضو أو الأنسجة الداخلية من خلال نقطة ضعف في العضلات المحيطة به. إليك أبرز الأنواع:
+            </p>
         </div>
-        <div class="bg-emerald-50/70 border border-emerald-100 rounded-2xl p-4">
-          <div class="font-bold text-emerald-900 mb-1">دور التوعية والتأهيل</div>
-          <p class="text-slate-600">تحسين ميكانيكية الجسم والتنفس وتقوية العضلات الداعمة وفق إرشادات المختصين.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- الفتق الإربي -->
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition space-y-4 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center font-bold text-xl mb-4">🩻</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">الفتق الإربي (Inguinal)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        الأكثر شيوعاً، ويحدث عندما تبرز الأنسجة (مثل الأمعاء) عبر نقطة ضعف في القناة الإربية أسفل البطن، ويكثر لدى الرجال.
+                    </p>
+                </div>
+                <span class="text-xs font-semibold text-sky-600 bg-sky-50 px-3 py-1 rounded-lg self-start">الأكثر شيوعاً</span>
+            </div>
+
+            <!-- الفتق السري -->
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition space-y-4 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center font-bold text-xl mb-4">👶</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">الفتق السري (Umbilical)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        يحدث عندما يبرز جزء من الأمعاء من خلال عضلات البطن بالقرب من السرة، ويظهر بوضوح لدى المواليد الجدد وأيضاً البالغين بسبب زيادة الوزن.
+                    </p>
+                </div>
+                <span class="text-xs font-semibold text-sky-600 bg-sky-50 px-3 py-1 rounded-lg self-start">يشمل الرضع والبالغين</span>
+            </div>
+
+            <!-- الفتق الجراحي -->
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition space-y-4 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center font-bold text-xl mb-4">🩺</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">الفتق الجراحي (Incisional)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        يحدث في مكان شق جراحي سابق في البطن إذا لم تلتئم عضلات البطن بالقوة الكافية بعد العملية، مما يسمح للأنسجة بالبروز.
+                    </p>
+                </div>
+                <span class="text-xs font-semibold text-sky-600 bg-sky-50 px-3 py-1 rounded-lg self-start">موضع جراحة سابقة</span>
+            </div>
+
+            <!-- الفتق الفخذي -->
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition space-y-4 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center font-bold text-xl mb-4">🦴</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">الفتق الفخذي (Femoral)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        أقل شيوعاً ويظهر في أعلى الفخذ أو الفخذ الداخلي، وهو أكثر انتشاراً بين النساء وكثيراً ما يرتبط بمضاعفات تتطلب تدخلاً عاجلاً.
+                    </p>
+                </div>
+                <span class="text-xs font-semibold text-sky-600 bg-sky-50 px-3 py-1 rounded-lg self-start">أكثر شيوعاً للنساء</span>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- الأنواع والأعراض -->
-  <section id="types" class="py-14 max-w-6xl mx-auto px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8 text-center">أشهر أنواع الفتق</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm">
-        <span class="inline-block bg-sky-100 text-sky-700 text-xs font-bold px-3 py-1 rounded-full mb-3">النوع الأكثر شيوعاً</span>
-        <h3 class="text-xl font-bold text-slate-900 mb-2">الفتق الإربي</h3>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          يظهر في منطقة أسفل البطن أو أعلى الفخذ (المنطقة الإربية)، ويزداد وضوحاً عند الوقوف أو السعال أو حمل الأوزان.
-        </p>
-      </div>
+    <!-- 2 & 3. الأعراض والأسباب وعوامل الخطر -->
+    <section id="symptoms" class="bg-slate-100 py-20 px-4 sm:px-6 lg:px-8 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- الأعراض والعلامات -->
+            <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-sm space-y-6">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <span class="w-10 h-10 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center font-bold">⚠️</span>
+                    <h2 class="text-2xl font-black text-slate-900">الأعراض والعلامات التحذيرية</h2>
+                </div>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    تختلف الأعراض باختلاف حجم وموقع الفتق، لكن العلامات المشتركة تشمل:
+                </p>
+                <ul class="space-y-4 text-slate-700 text-sm">
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-rose-500 font-bold mt-1">▪️</span>
+                        <span>بروز أو انتفاخ واضح في منطقة البطن أو الإرب (قد يختفي عند الاستلقاء).</span>
+                    </li>
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-rose-500 font-bold mt-1">▪️</span>
+                        <span>شعور بالألم أو الانزعاج عند الانحناء أو السعال أو رفع الأثقال.</span>
+                    </li>
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-rose-500 font-bold mt-1">▪️</span>
+                        <span>إحساس بالثقل، الامتلاء، أو الضعف في منطقة البطن.</span>
+                    </li>
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-rose-600 font-bold mt-1">🚨</span>
+                        <strong class="text-rose-900">أعراض طارئة (الاختناق):</strong> ألم شديد ومفاجئ يزداد سوءاً، تحول الانتفاخ إلى اللون الأحمر أو الأرجواني، غثيان وقيء (تستدعي طوارئ فورية).
+                    </li>
+                </ul>
+            </div>
 
-      <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm">
-        <span class="inline-block bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full mb-3">حول السرة</span>
-        <h3 class="text-xl font-bold text-slate-900 mb-2">الفتق السري</h3>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          يحدث بالقرب من السرة نتيجة ضعف في جدار البطن في هذه المنطقة، وقد يظهر عند الأطفال أو البالغين.
-        </p>
-      </div>
-
-      <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm">
-        <span class="inline-block bg-teal-100 text-teal-700 text-xs font-bold px-3 py-1 rounded-full mb-3">بعد العمليات</span>
-        <h3 class="text-xl font-bold text-slate-900 mb-2">الفتق الجراحي</h3>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          يظهر في موضع شق جراحي سابق في جدار البطن إذا لم يلتئم النسيج العضلي بالقوة الكافية أو تعرض لضغط مبكر.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- الوقاية والعلاج الطبيعي -->
-  <section id="prevention" class="py-14 max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6">إرشادات الوقاية والتأهيل الحركي</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 text-sm sm:text-base">
-        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/70">
-          <h3 class="font-bold text-slate-900 mb-1">1. الطريقة الصحيحة لرفع الأشياء</h3>
-          <p class="text-slate-600">قرّب الجسم من الغرض، اثنِ الركبتين والوركين مع الحفاظ على استقامة الظهر، وتجنب حبس النفس المفاجئ.</p>
+            <!-- الأسباب وعوامل الخطر -->
+            <div id="causes" class="bg-white p-8 sm:p-10 rounded-3xl shadow-sm space-y-6">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <span class="w-10 h-10 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center font-bold">🔍</span>
+                    <h2 class="text-2xl font-black text-slate-900">الأسباب وعوامل الخطر</h2>
+                </div>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    ينتج الفتق عن مزيج من ضعف عضلات البطن والضغط المستمر عليها:
+                </p>
+                <ul class="space-y-4 text-slate-700 text-sm">
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-sky-600 font-bold mt-1">▪️</span>
+                        <span><strong>رفع الأثقال:</strong> حمل الأوزان الكبيرة بطريقة غير صحيحة يولد ضغطاً هائلاً على عضلات الجذع.</span>
+                    </li>
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-sky-600 font-bold mt-1">▪️</span>
+                        <span><strong>السعال المزمن:</strong> مثل سعال المدخنين أو النزلات الصدرية المتكررة.</span>
+                    </li>
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-sky-600 font-bold mt-1">▪️</span>
+                        <span><strong>الإمساك المزمن:</strong> الجهد المتكرر والضغط أثناء الإخراج.</span>
+                    </li>
+                    <li class="flex items-start space-x-3 space-x-reverse">
+                        <span class="text-sky-600 font-bold mt-1">▪️</span>
+                        <span><strong>عوامل أخرى:</strong> الحمل المتكرر، السمنة المفرطة، التقدم في العمر وضعف الأنسجة الطبيعي.</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/70">
-          <h3 class="font-bold text-slate-900 mb-1">2. التنفس وتقليل الضغط داخل البطن</h3>
-          <p class="text-slate-600">تنسّق الزفير مع المجهود الحركي لتقليل الضغط المفاجئ على جدار البطن والحوض.</p>
-        </div>
-        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/70">
-          <h3 class="font-bold text-slate-900 mb-1">3. تجنب الإمساك المزمن</h3>
-          <p class="text-slate-600">الاهتمام بشرب الماء والألياف الغذائية لتقليل الحاجة للحزق المتكرر أثناء التبرز.</p>
-        </div>
-        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/70">
-          <h3 class="font-bold text-slate-900 mb-1">4. برنامج تأهيلي مدروس</h3>
-          <p class="text-slate-600">العودة التدريجية للنشاط والتمارين تحت إشراف الطبيب وأخصائي العلاج الطبيعي حسب حالة كل شخص.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- حقائق وخرافات -->
-  <section id="faq" class="py-14 max-w-5xl mx-auto px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6 text-center">حقائق وخرافات شائعة</h2>
-    <div class="space-y-4">
-      <div class="bg-white rounded-2xl p-5 border border-slate-200">
-        <p class="font-bold text-rose-700 mb-1">خرافة: الفتق يختفي وحده مع الوقت بدون متابعة.</p>
-        <p class="text-slate-600 text-sm">حقيقة: ضعف جدار العضلات لا يلتئم تلقائياً من نفسه، ويحتاج إلى تقييم طبي لتحديد المتابعة أو التدخل المناسب.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-5 border border-slate-200">
-        <p class="font-bold text-rose-700 mb-1">خرافة: أي انتفاخ في البطن يعني بالضرورة وجود فتق خطير.</p>
-        <p class="text-slate-600 text-sm">حقيقة: الكشف السريري هو الذي يحدد السبب الدقيق ويفرّق بين الفتق والحالات الأخرى.</p>
-      </div>
-    </div>
-  </section>
+    <!-- 4. العلاج والوقاية -->
+    <section id="treatment" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">العلاج وطرق الوقاية</h2>
+            <div class="w-16 h-1 bg-sky-600 mx-auto rounded-full"></div>
+            <p class="text-slate-600 text-lg">
+                التشخيص المبكر والعلاج الجراحي الصحيح يحميك من أي مضاعفات مستقبلية خطيرة.
+            </p>
+        </div>
 
-  <!-- التذييل -->
-  <footer class="bg-slate-900 text-slate-300 py-8 mt-10 text-center text-sm px-4">
-    <p class="font-semibold text-white mb-1">دليل الفتق التفاعلي - توعية وعلاج</p>
-    <p class="text-slate-400 text-xs">محتوى توعوي إرشادي لا يغني عن الاستشارة الطبية المباشرة.</p>
-  </footer>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-4">🏥</div>
+                <h3 class="text-2xl font-bold text-slate-900">خيارات العلاج</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">
+                    الجراحة هي الحل النهائي والوحيد للشفاء التام من الفتق. تتم إما عن طريق <strong>الجراحة المفتوحة</strong> التقليدية أو عبر <strong>جراحة المنظار</strong> (Laparoscopy) التي تتميز بسرعة التعافي وقلة الآلام.
+                </p>
+            </div>
 
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-4">🛡️</div>
+                <h3 class="text-2xl font-bold text-slate-900">نصائح للوقاية</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li>✔️ الحفاظ على وزن صحي ومثالي وتقليل الدهون.</li>
+                    <li>✔️ تناول الأطعمة الغنية بالألياف وشرب الماء لتجنب الإمساك.</li>
+                    <li>✔️ استخدام الساقين وليس الظهر عند رفع الأوزان الثقيلة.</li>
+                    <li>✔️ الإقلاع عن التدخين لمنع السعال المزمن المجهد للبطن.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. قسم لعبة حقيقة أم خرافة التفاعلية -->
+    <section id="game" class="bg-slate-900 text-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <div class="text-center space-y-3">
+                <span class="bg-sky-800 text-sky-300 font-bold text-xs uppercase px-3 py-1 rounded-full">تحدي المعلومات الطبية</span>
+                <h2 class="text-3xl font-extrabold text-white">لعبة: حقيقة أم خرافة عن الفتق؟ 🎮</h2>
+                <p class="text-slate-300 text-sm">اختبر معلوماتك واكتشف بنفسك مدى صحة المعتقدات الشائعة حول الفتق وأسبابه وطرق علاجه.</p>
+            </div>
+
+            <div id="game-card" class="bg-slate-800 p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-700 space-y-6">
+                <div class="flex justify-between items-center text-sm font-bold text-slate-400">
+                    <span id="question-counter">السؤال 1 من 5</span>
+                    <span id="game-score" class="text-sky-400">النتيجة: 0</span>
+                </div>
+
+                <div class="min-h-[100px] flex items-center justify-center text-center">
+                    <h3 id="question-text" class="text-xl sm:text-2xl font-bold text-white leading-snug"></h3>
+                </div>
+
+                <div id="game-options" class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <button onclick="handleAnswer(true)" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl shadow transition transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 space-x-reverse text-lg">
+                        <span>✅ حقيقة</span>
+                    </button>
+                    <button onclick="handleAnswer(false)" class="bg-rose-600 hover:bg-rose-500 text-white font-bold py-4 px-6 rounded-2xl shadow transition transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 space-x-reverse text-lg">
+                        <span>❌ خرافة</span>
+                    </button>
+                </div>
+
+                <div id="feedback-box" class="hidden p-5 rounded-2xl space-y-4">
+                    <div id="feedback-title" class="font-black text-lg"></div>
+                    <p id="feedback-desc" class="text-sm leading-relaxed"></p>
+                    <button onclick="nextQuestion()" class="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold py-3 rounded-xl shadow transition">السؤال التالي ➡️</button>
+                </div>
+            </div>
+
+            <!-- نتيجة النهاية للعبة -->
+            <div id="game-over-box" class="hidden bg-slate-800 p-8 rounded-3xl shadow-xl text-center space-y-6 border border-slate-700">
+                <div class="text-5xl">🏆</div>
+                <h3 class="text-2xl font-black text-white">انتهت اللعبة!</h3>
+                <p id="final-score-text" class="text-lg font-semibold text-sky-400"></p>
+                <button onclick="restartGame()" class="bg-sky-600 hover:bg-sky-500 text-white font-bold px-8 py-3 rounded-xl shadow transition">العب مرة أخرى 🔄</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. أداة تفاعلية لتقييم الأعراض -->
+    <section id="quiz" class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <div class="text-center space-y-3">
+                <span class="bg-sky-100 text-sky-700 font-bold text-xs uppercase px-3 py-1 rounded-full">أداة تفاعلية سريعة</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">فحص الأعراض وتقييم الحالة 🩺</h2>
+                <p class="text-slate-600 text-sm">أجب عن السؤالين التاليين لمعرفة مدى الحاجة لمراجعة الطبيب عاجلاً.</p>
+            </div>
+
+            <div class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-slate-200 space-y-8">
+                <!-- السؤال الأول -->
+                <div class="space-y-3">
+                    <label class="block font-bold text-slate-800 text-base">1. هل تشعر ببروز أو انتفاخ ملحوظ يظهر في البطن أو الإرب ويزداد مع السعال أو الوقوف؟</label>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="setQuizAnswer('q1', 'yes', this)" class="quiz-btn-1 py-3 px-4 rounded-xl border-2 border-slate-200 bg-white font-semibold text-slate-700 hover:border-sky-600 transition">نعم</button>
+                        <button onclick="setQuizAnswer('q1', 'no', this)" class="quiz-btn-1 py-3 px-4 rounded-xl border-2 border-slate-200 bg-white font-semibold text-slate-700 hover:border-sky-600 transition">لا</button>
+                    </div>
+                </div>
+
+                <!-- السؤال الثاني -->
+                <div class="space-y-3">
+                    <label class="block font-bold text-slate-800 text-base">2. هل تعاني من ألم شديد ومفاجئ، أو احمرار وتغير في لون الانتفاخ، أو غثيان وقيء؟</label>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="setQuizAnswer('q2', 'yes', this)" class="quiz-btn-2 py-3 px-4 rounded-xl border-2 border-slate-200 bg-white font-semibold text-slate-700 hover:border-sky-600 transition">نعم</button>
+                        <button onclick="setQuizAnswer('q2', 'no', this)" class="quiz-btn-2 py-3 px-4 rounded-xl border-2 border-slate-200 bg-white font-semibold text-slate-700 hover:border-sky-600 transition">لا</button>
+                    </div>
+                </div>
+
+                <button onclick="evaluateSymptoms()" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-4 rounded-2xl shadow transition text-lg">
+                    عرض التوجيه الطبي الفوري 📋
+                </button>
+
+                <!-- نتيجة الفحص -->
+                <div id="quiz-result" class="hidden p-6 rounded-2xl space-y-3 border transition"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل (Footer) -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-4 sm:px-6 lg:px-8 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <p class="text-sm font-light">
+                موقع التوعية الصحية بمرض الفتق. المحتوى الطبي للاستئناس والتوعية ولا يُغني بحال عن استشارة الطبيب المختص.
+            </p>
+            <p class="text-xs text-slate-500">
+                جميع الحقوق محفوظة © 2026
+            </p>
+        </div>
+    </footer>
+
+    <!-- السكريبت البرمجي التفاعلي للألعاب والفحص -->
+    <script>
+        // بيانات لعبة حقيقة أم خرافة
+        const triviaQuestions = [
+            {
+                text: "هل يمكن علاج الفتق تماماً في المنزل باستخدام الأعشاب أو الأدوية المسكنة فقط؟",
+                isFact: false,
+                explanation: "خرافة! الأدوية والأعشاب قد تخفف الأعراض المؤقتة فقط، لكن العلاج الوحيد والنهائي للفتق هو التدخل الجراحي لإصلاح جدار البطن الضعيف."
+            },
+            {
+                text: "هل رفع الأثقال والأوزان بطريقة خاطئة يعتبر أحد الأسباب الرئيسية لحدوث الفتق؟",
+                isFact: true,
+                explanation: "حقيقة! الضغط المفاجئ وغير الصحيح على عضلات البطن أثناء رفع أوزان ثقيلة يسبب ضعفاً وبروزاً للأنسجة الداخلية."
+            },
+            {
+                text: "هل يصيب الفتق الرجال فقط ولا يمكن أن يحدث للنساء نهائياً؟",
+                isFact: false,
+                explanation: "خرافة! على الرغم من أن الفتق الإربي أكثر شيوعاً لدى الرجال، إلا أن النساء عرضة لأنواع أخرى من الفتق مثل الفتق السري والفخذي والجراحي."
+            },
+            {
+                text: "هل السعال المزمن والإمساك المتكرر قد يؤديان إلى الإصابة بالفتق؟",
+                isFact: true,
+                explanation: "حقيقة! أي ضغط مستمر ومتكرر على جدار البطن (مثل السعال الشديد أو الإجهاد المستمر أثناء الإخراج) يضعف العضلات ويزيد فرصة الفتق."
+            },
+            {
+                text: "هل يمكن للفتق الصغير أن يختفي من تلقاء نفسه دون أي تدخل طبي بمرور الوقت؟",
+                isFact: false,
+                explanation: "خرافة! عضلات البطن الضعيفة أو الممزقة لا تلتئم أو تغلق تلقائياً بمفردها، وغالباً ما يزداد حجم الفتق بمرور الوقت إذا لم يتم علاجه."
+            }
+        ];
+
+        let currentQIndex = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const q = triviaQuestions[currentQIndex];
+            document.getElementById('question-counter').innerText = `السؤال ${currentQIndex + 1} من ${triviaQuestions.length}`;
+            document.getElementById('question-text').innerText = q.text;
+            document.getElementById('game-score').innerText = `النتيجة: ${score}`;
+            document.getElementById('game-options').classList.remove('hidden');
+            document.getElementById('feedback-box').classList.add('hidden');
+        }
+
+        function handleAnswer(userAnswer) {
+            const q = triviaQuestions[currentQIndex];
+            const isCorrect = (userAnswer === q.isFact);
+
+            if (isCorrect) {
+                score += 20;
+            }
+
+            document.getElementById('game-options').classList.add('hidden');
+            const feedbackBox = document.getElementById('feedback-box');
+            feedbackBox.classList.remove('hidden');
+
+            const titleEl = document.getElementById('feedback-title');
+            const descEl = document.getElementById('feedback-desc');
+
+            if (isCorrect) {
+                feedbackBox.className = "bg-emerald-950/60 border border-emerald-600 text-emerald-200 p-5 rounded-2xl space-y-4";
+                titleEl.innerHTML = "🎉 إجابة صحيحة!";
+            } else {
+                feedbackBox.className = "bg-rose-950/60 border border-rose-600 text-rose-200 p-5 rounded-2xl space-y-4";
+                titleEl.innerHTML = "❌ إجابة خاطئة!";
+            }
+            descEl.innerText = q.explanation;
+            document.getElementById('game-score').innerText = `النتيجة: ${score}`;
+        }
+
+        function nextQuestion() {
+            currentQIndex++;
+            if (currentQIndex < triviaQuestions.length) {
+                loadQuestion();
+            } else {
+                document.getElementById('game-card').classList.add('hidden');
+                document.getElementById('game-over-box').classList.remove('hidden');
+                document.getElementById('final-score-text').innerText = `حصدت ${score} من 100 نقطة!`;
+            }
+        }
+
+        function restartGame() {
+            currentQIndex = 0;
+            score = 0;
+            document.getElementById('game-card').classList.remove('hidden');
+            document.getElementById('game-over-box').classList.add('hidden');
+            loadQuestion();
+        }
+
+        // منطق أداة فحص الأعراض التفاعلية
+        let quizAnswers = { q1: null, q2: null };
+
+        function setQuizAnswer(questionId, value, btnElement) {
+            quizAnswers[questionId] = value;
+            const parent = btnElement.parentElement;
+            parent.querySelectorAll('button').forEach(b => {
+                b.classList.remove('border-sky-600', 'bg-sky-50', 'text-sky-700');
+                b.classList.add('border-slate-200', 'bg-white', 'text-slate-700');
+            });
+            btnElement.classList.remove('border-slate-200', 'bg-white', 'text-slate-700');
+            btnElement.classList.add('border-sky-600', 'bg-sky-50', 'text-sky-700');
+        }
+
+        function evaluateSymptoms() {
+            const resultBox = document.getElementById('quiz-result');
+            resultBox.classList.remove('hidden');
+
+            if (!quizAnswers.q1 && !quizAnswers.q2) {
+                resultBox.className = "p-6 rounded-2xl space-y-2 bg-amber-50 border border-amber-300 text-amber-900";
+                resultBox.innerHTML = "<h4 class='font-bold text-lg'>⚠️ يرجى الإجابة على الأسئلة أولاً</h4><p class='text-sm'>الرجاء اختيار الإجابات لتقديم التوجيه المناسب.</p>";
+                return;
+            }
+
+            if (quizAnswers.q2 === 'yes') {
+                resultBox.className = "p-6 rounded-2xl space-y-2 bg-rose-50 border border-rose-300 text-rose-900";
+                resultBox.innerHTML = `
+                    <h4 class='font-black text-xl flex items-center space-x-2 space-x-reverse'><span>🚨</span> <span>حالة طارئة تتطلب تدخلاً عاجلاً!</span></h4>
+                    <p class='text-sm leading-relaxed'>وجود ألم شديد ومفاجئ، أو احمرار، أو غثيان قد يشير إلى "اختناق الفتق" (Strangulated Hernia). توجه إلى أقرب قسم طوارئ فوراً لتلقي الرعاية الطبية.</p>
+                `;
+            } else if (quizAnswers.q1 === 'yes') {
+                resultBox.className = "p-6 rounded-2xl space-y-2 bg-sky-50 border border-sky-300 text-sky-900";
+                resultBox.innerHTML = `
+                    <h4 class='font-black text-xl flex items-center space-x-2 space-x-reverse'><span>🩺</span> <span>يُنصح بزيارة الطبيب المختص</span></h4>
+                    <p class='text-sm leading-relaxed'>الأعراض التي تشعر بها تشير باحتمالية وجود فتق يتطلب الفحص السريري من قبل جراح عام لتحديد نوعه وحجمه ووضع خطة العلاج المناسبة.</p>
+                `;
+            } else {
+                resultBox.className = "p-6 rounded-2xl space-y-2 bg-emerald-50 border border-emerald-300 text-emerald-900";
+                resultBox.innerHTML = `
+                    <h4 class='font-black text-xl flex items-center space-x-2 space-x-reverse'><span>✅</span> <span>لا توجد مؤشرات واضحة للفتق</span></h4>
+                    <p class='text-sm leading-relaxed'>بناءً على إجاباتك، لا تظهر أعراض الفتق الشائعة. ومع ذلك، في حال ظهور أي انتفاخ أو ألم لاحقاً، يُرجى استشارة الطبيب للاطمئنان.</p>
+                `;
+            }
+        }
+
+        // تشغيل السؤال الأول عند تحميل الصفحة
+        window.addEventListener('DOMContentLoaded', () => {
+            loadQuestion();
+        });
+    </script>
 </body>
 </html>
-
